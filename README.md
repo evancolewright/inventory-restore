@@ -20,7 +20,7 @@ The plugin currently only has one command as of version 2.0.  This command is de
 
 | Usage                          | Aliases          | Permission Node          |
 | ------------------------------ | ---------------- | ------------------------ |
-| /inventoryrestore <playerName> | /ir, /invrestore | inventoryrestore.restore |
+| /inventoryrestore (playerName) | /ir, /invrestore | inventoryrestore.restore |
 
 ## Installation
 
