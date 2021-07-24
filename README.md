@@ -24,7 +24,7 @@ The plugin currently only has one command as of version 2.0.  This command is de
 
 ## Installation
 
-- Download the Jar file from [here]https://www.spigotmc.org/resources/inventory-restore-1-8-1-17.22436/).
+- Download the Jar file from [here](https://www.spigotmc.org/resources/inventory-restore-1-8-1-17.22436/).
 - Export the jar to your server's "plugins" folder either by dragging and dropping, or through an FTP client such as FileZilla.
 - Restart / Reload your server
 
@@ -37,7 +37,6 @@ The plugin currently only has one command as of version 2.0.  This command is de
 - A stack trace enclosed in code tags
 
 - A brief description of the error
-
   
 
 **For contributing purposes**, pull requests are welcome, but I do ask that you attempt to not branch outside the scope of this plugin.  This program is not intended to be extremely complex or feature-packed.   To summarize, small features are more appropriate.
