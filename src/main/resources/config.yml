@@ -1,0 +1,17 @@
+# ===================================================
+# InventoryRestore v2.0
+#
+# Author: Evan Wright (EvanTheSurfer)
+# Github: https://github.com/evancolewright/inventory-restore
+# ===================================================
+
+store_on_natural_death: true   # Should the system store the inventory of a player that dies from natural causes?
+require_empty_inventory: true   # Should a player's inventory be clear before you can restore it?
+
+messages:
+  usage: "&cUsage: /ir <player>"
+  player_offline: "&cThat player is offline!"
+  player_inventory_not_empty: "&cThat player's inventory is not empty!"
+  player_no_cache: "&cThat player does not have a cached inventory to be restored!"
+  player_inventory_restored: "&eSuccessfully restored {PLAYER}'s inventory!"
+  inventory_restored: "&eYour inventory was restored by an administrator!"

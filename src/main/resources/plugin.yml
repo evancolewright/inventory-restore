@@ -1,0 +1,12 @@
+name: InventoryRestore
+version: ${project.version}
+main: com.github.evancolewright.inventoryrestore.IRPlugin
+api-version: 1.17
+authors: [ evancolewright ]
+description: A simple and effective inventory-restoring plugin for all versions of Minecraft.
+commands:
+  inventoryrestore:
+    permission: inventoryrestore.restore
+    aliases:
+      - ir
+      - invrestore
