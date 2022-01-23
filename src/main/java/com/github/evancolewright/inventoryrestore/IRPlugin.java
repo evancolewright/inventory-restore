@@ -11,8 +11,6 @@ public final class IRPlugin extends JavaPlugin
     @Override
     public void onEnable()
     {
-        IRPlugin IRpLUGIN = (IRPlugin) getServer().getPluginManager().getPlugin("InventoryRestore");
-
         saveDefaultConfig();
         irManager = new IRManager(this);
         getServer().getPluginManager().registerEvents(new IRListeners(this), this);
