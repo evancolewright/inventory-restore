@@ -47,19 +47,24 @@ public final class IRManager
     {
         if (player == null) return IRResult.OFFLINE;
         if (!player.isOnline()) return IRResult.OFFLINE;
-        if (config.getBoolean("require_empty_inventory") && !PlayerUtils.isInventoryEmpty(player))
-            return IRResult.INVENTORY_NOT_EMPTY;
+        if (config.getBoolean("require_empty_inventory") && !PlayerUtils.isInventoryEmpty(player)) return IRResult.INVENTORY_NOT_EMPTY;
         if (!inventoryContents.containsKey(player.getUniqueId())) return IRResult.NO_SAVED_INVENTORY;
 
         PlayerInventory inventory = player.getInventory();
         inventory.setContents(inventoryContents.get(player.getUniqueId()));
         inventory.setArmorContents(armorContents.get(player.getUniqueId()));
-        clearCacheContents(player);
+
+        if (config.getBoolean("clear_on_restore"))
+            clearCacheContents(player);
 
         return IRResult.SUCCESS;
     }
 
-    private void clearCacheContents(Player player)
+    /**
+     * Clears a {@link Player}'s {@link org.bukkit.inventory.Inventory} from the cache if it exists.
+     * @param player The {@link Player} that needs clearing
+     */
+    public void clearCacheContents(Player player)
     {
         inventoryContents.remove(player.getUniqueId());
         armorContents.remove(player.getUniqueId());

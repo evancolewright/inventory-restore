@@ -1,12 +1,14 @@
-# ===================================================
-# InventoryRestore v2.0
+# --------------------------------------------------
+# InventoryRestore Configuration File
 #
-# Author: Evan Wright (EvanTheSurfer)
+# Version: 2.1
+# Author: Evan Wright
 # Github: https://github.com/evancolewright/inventory-restore
-# ===================================================
+# --------------------------------------------------
 
 store_on_natural_death: true   # Should the system store the inventory of a player that dies from natural causes?
 require_empty_inventory: true   # Should a player's inventory be clear before you can restore it?
+clear_on_restore: true   # Clear a player from the cache after their inventory is restored?
 
 messages:
   usage: "&cUsage: /ir <player>"
