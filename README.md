@@ -63,5 +63,5 @@ irPlugin.getIrManager().clearCacheContents(player);
 ```
 
 ## Contributing
-See [Contributing](../Contributing.md).
+See [Contributing](https://github.com/evancolewright/inventory-restore/blob/main/Contributing.md).
 
